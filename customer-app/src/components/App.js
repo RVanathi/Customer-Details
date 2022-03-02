@@ -69,7 +69,8 @@ function App() {
     setSearchTerm(searchTerm);
     if (searchTerm !== "") {
       const newCustomerList = customers.filter((customer) => {
-        return (Object.values(customer)[1] + Object.values(customer)[3]) // Seach by "Name" or "Phone number"
+        // console.log(Object.values(customer)[1] + Object.values(customer)[3]);
+        return (customer.name + customer.phone) // Seach by "Name" or "Phone number"
           .toLowerCase()
           .includes(searchTerm.toLowerCase());
       });
@@ -117,12 +118,7 @@ function App() {
           <Route
             exact
             path="/customer/:id"
-            element={
-              <CustomerDetail
-                customers={customers}
-                viewDetails={currentDetail}
-              />
-            }
+            element={<CustomerDetail viewDetails={currentDetail} />}
           />
           <Route
             exact
