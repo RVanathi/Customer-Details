@@ -70,6 +70,7 @@ function App() {
     if (searchTerm !== "") {
       const newCustomerList = customers.filter((customer) => {
         // console.log(Object.values(customer)[1] + Object.values(customer)[3]);
+        // console.log(...Object.values(customer));
         return (customer.name + customer.phone) // Seach by "Name" or "Phone number"
           .toLowerCase()
           .includes(searchTerm.toLowerCase());
