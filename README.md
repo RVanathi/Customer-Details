@@ -13,7 +13,7 @@ with the following requirements:
 
 · Use mock content.
 
-## React App
+## React App - Customer Details
 
 This is a simple customer details application built in React. It lists the customers, their full details (full name, email, phone address and membership) can be viewed separately. It lets us search the list by name or phone number, add, edit and delete an entry. The data is stored in and retrieved from the local storage.
 
