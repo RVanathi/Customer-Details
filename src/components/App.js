@@ -6,7 +6,7 @@ import Header from "./Header";
 import NewCustomer from "./NewCustomer";
 import CustomerList from "./CustomerList";
 import CustomerDetail from "./CustomerDetail";
-import Data from "./MOCK_50_DATA.json";
+import Data from "../data/MOCK_50_DATA.json";
 import EditCustomer from "./EditCustomer";
 import Home from "./Home";
 

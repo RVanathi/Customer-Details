@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,19 +8,23 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 nav {
   height: 120px;
   width: 100%;
   background: linear-gradient(135deg, #3e4141, #9c9ca1);
 }
+
 body {
-  background: url(BGimage.jpg);
+  background: url(/public/BGimage.jpg);
   background-size: cover;
   height: 100vh;
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
+  overflow: hidden;
 }
+
 form {
   display: flex;
   height: 100vh;
@@ -27,14 +32,17 @@ form {
   align-items: center;
   padding: 10px;
 }
+
 hr {
   margin-top: 5px;
   border: 1px solid #9c9ca1;
 }
+
 i {
   padding-left: 0.5em;
   color: #272929;
 }
+
 .head-title {
   color: #fff;
   font-size: 25px;
@@ -42,12 +50,14 @@ i {
   line-height: 70px;
   padding: 0 30px;
 }
+
 .head-buttons {
   width: 100%;
   padding: 0 30px;
   border-right-width: 5px;
   display: block;
 }
+
 .head-btn {
   height: 35px;
   width: 10%;
@@ -61,7 +71,14 @@ i {
   letter-spacing: 1px;
   background: linear-gradient(135deg, #eda5c5 0%, #85b1e4);
   margin-right: 5px;
+  cursor: pointer;
 }
+
+.head-btn:hover {
+  opacity: .7;
+  color: white;
+}
+
 .home {
   display: flex;
   width: 100%;
@@ -73,6 +90,7 @@ i {
   font-size: 25px;
   font-weight: 500;
 }
+
 .container {
   max-width: 600px;
   width: 100%;
@@ -81,21 +99,26 @@ i {
   border-radius: 5px;
   margin: 5% 30%;
   position: relative;
+  align-items: center;
 }
+
 .container .title {
   font-size: 25px;
   font-weight: 500;
   position: relative;
 }
+
 form .details.input-box {
   margin-bottom: 15px;
   width: calc(100% / 2 - 20px);
 }
+
 .details .input-box .fields {
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
 }
+
 .details .input-box input {
   height: 40px;
   width: 100%;
@@ -106,6 +129,7 @@ form .details.input-box {
   font-size: 16px;
   border-bottom-width: 2px;
 }
+
 form .button {
   height: 45px;
   margin: 45px 0;
@@ -118,20 +142,29 @@ form .button {
   border-radius: 5px;
   letter-spacing: 1px;
   background: linear-gradient(135deg, #3e4141, #9c9ca1);
+  cursor: pointer;
 }
+
+.button:hover {
+  opacity: .7;
+}
+
 @media (max-width: 584px) {
   .container {
     max-width: 100%;
   }
 }
+
 form .details .input-box {
   margin-bottom: 15px;
   width: 100%;
 }
+
 .details {
   max-height: 400px;
   overflow-y: scroll;
 }
+
 .search input {
   height: 40px;
   width: 60%;
@@ -142,14 +175,17 @@ form .details .input-box {
   font-size: 16px;
   border-bottom-width: 2px;
 }
+
 .search {
   font-size: 14px;
   padding-bottom: 15px;
 }
+
 .customer-name {
   font-size: 18px;
   font-weight: 500px;
 }
+
 .membership {
   width: 80px;
   text-align: center;
@@ -159,6 +195,7 @@ form .details .input-box {
   font-size: 15px;
   border-radius: 10px;
 }
+
 .customer-section {
   display: flex;
   justify-content: space-between;
