@@ -130,6 +130,7 @@ function App() {
           />
         </Routes>
       </Router>
+      <footer>Copyright ©2023 Vanathi Rajasekar</footer>
     </div>
   );
 }

@@ -202,3 +202,11 @@ form .details .input-box {
   align-items: center;
   padding: 0 1.5em;
 }
+
+footer {
+  color: #3e4141;
+  font-size: small;
+  position: fixed;
+  bottom: 2%;
+  left: 1%;
+}
